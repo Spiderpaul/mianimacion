@@ -1,0 +1,19 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: #579BB1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: url(../img/cursor.svg),auto;
+    transition: 0.5s;
+}
+
+#paul {
+    width: 250px;
+}
