@@ -69,7 +69,7 @@ const follow = () => {
     
 }
 
-// container.addEventListener('resize', defineContainerSize);
-// container.addEventListener('mousemove', mouseMove);
-window.addEventListener('resize', defineContainerSize);
-window.addEventListener('mousemove', mouseMove);
+container.addEventListener('resize', defineContainerSize);
+container.addEventListener('mousemove', mouseMove);
+// window.addEventListener('resize', defineContainerSize);
+// window.addEventListener('mousemove', mouseMove);
