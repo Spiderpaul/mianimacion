@@ -39,6 +39,14 @@ function mouseMove(e) {
     
 }
 
+function touchMove(e) {
+    cursorPosition = {
+        x: e.targetTouches[0].offsetX,
+        y: e.targetTouches[0].offsetY
+    }
+    follow();
+}
+
 const followCursor = ( element, xRelation, yRelation) => {
 
     // getBoundingClientRect() devuelve información del tamaño y posición de un elemento.
@@ -71,5 +79,7 @@ const follow = () => {
 
 container.addEventListener('resize', defineContainerSize);
 container.addEventListener('mousemove', mouseMove);
+container.addEventListener('touchmove', touchMove);
+
 // window.addEventListener('resize', defineContainerSize);
 // window.addEventListener('mousemove', mouseMove);
